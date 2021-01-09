@@ -1,0 +1,17 @@
+.footer {
+    color: white;
+    background-color: steelblue;
+    padding-top: 3em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.colItem a {
+    color: white;
+}
+
+.colItem a:hover {
+    color: darkslategrey;
+    text-decoration: none;
+}

@@ -1,0 +1,17 @@
+.navbar {
+    background-color: steelblue;
+}
+
+.navLinkItem {
+    text-transform: uppercase;
+    margin: 0 50px;
+    color: white;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+.navbar-toggler {
+    border: none;
+    color: white;
+}

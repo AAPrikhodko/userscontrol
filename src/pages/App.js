@@ -10,11 +10,12 @@ import "./App.css"
 function App() {
 
     return (
-        <div className="pageContainer">
+        <div className="wrapper">
             <BrowserRouter>
-                <Header/>
-                <div className="contentWrap"><Route path='/' render={() => <Home/>}/></div>
-                <Footer/>
+                <div className="header"><Header/></div>
+                <div className="content"><Route path='/' render={() => <Home/>}/></div>
+
+                <div className="footer"><Footer/></div>
             </BrowserRouter>
         </div>
     );

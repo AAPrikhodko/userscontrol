@@ -1,9 +1,10 @@
-.pageContainer {
+.wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-.contentWrap {
+.content {
     flex: 1;
+
 }

@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import firebase from 'firebase'
+import "./home.css"
 
 
 const Home = () => {
@@ -11,7 +12,7 @@ const Home = () => {
     }, []);
 
     return (
-            <table className="table">
+        <table className="table">
                     <thead>
                     <tr>
                         <th scope="col">Name</th>
@@ -38,7 +39,7 @@ const Home = () => {
                 }
                 </tbody>
             </table>
-        )
+            )
 }
 
 export default Home

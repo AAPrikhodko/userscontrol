@@ -1,11 +1,11 @@
 .table {
-    table-layout: fixed;
+    display: block;
     width: 100%;
     border-collapse: collapse;
     border: 3px solid purple;
-    margin: 15px auto;
-}
+    padding: 15px;
 
+}
 thead th:nth-child(1),
 thead th:nth-child(2),
 thead th:nth-child(3),

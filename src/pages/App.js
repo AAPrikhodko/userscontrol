@@ -14,7 +14,6 @@ function App() {
             <BrowserRouter>
                 <div className="header"><Header/></div>
                 <div className="content"><Route path='/' render={() => <Home/>}/></div>
-
                 <div className="footer"><Footer/></div>
             </BrowserRouter>
         </div>

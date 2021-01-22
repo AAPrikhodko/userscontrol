@@ -1,0 +1,5 @@
+.checkout_errMessage {
+    color: red;
+    font-size: small;
+    padding: 0 5px 0 10px;
+}

@@ -6,13 +6,14 @@
     padding: 15px;
 
 }
+
 thead th:nth-child(1),
 thead th:nth-child(2),
 thead th:nth-child(3),
 thead th:nth-child(4),
 thead th:nth-child(5),
 thead th:nth-child(6),
-thead th:nth-child(7){
+thead th:nth-child(7) {
     width: 10%;
 }
 
@@ -21,4 +22,16 @@ thead th {
     text-align: center;
 }
 
+.alert-container {
+    position: fixed;
+    right: 10%;
+    top: 10%;
+    z-index: 1;
+}
+
+.alert {
+    width: 350px;
+    float: right;
+    text-align: center;
+}
 

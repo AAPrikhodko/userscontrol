@@ -1,0 +1,24 @@
+.contentItem {
+    border: 0px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px steelblue;
+    margin: 5%;
+    padding: 5%;
+    font-size: 20px;
+    background-color: rgba(500,500,200,0.5);
+}
+.headerName {
+    font-size: 30px;
+    text-align: right;
+    letter-spacing: 2px;
+}
+
+.my_ul li {
+    list-style-type: none;
+    margin: 10px 0 10px 0;
+    background: url("../../img/checkbox.png") left 10px no-repeat;
+    background-size: 20px 20px;
+}
+.my_ul li div {
+ padding-left: 3rem;
+}

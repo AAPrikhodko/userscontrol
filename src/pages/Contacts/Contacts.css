@@ -1,0 +1,15 @@
+.wrapper{
+    background: url("../../img/bg-3.jpg") no-repeat fixed;
+}
+
+.contactAva{
+    width: 100%;
+}
+
+.contact_ul{
+    list-style-type: none;
+    padding-right: 3px;
+}
+.contact_ul li{
+    margin: 10px 5px ;
+}

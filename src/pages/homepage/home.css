@@ -13,8 +13,13 @@ thead th:nth-child(3),
 thead th:nth-child(4),
 thead th:nth-child(5),
 thead th:nth-child(6),
-thead th:nth-child(7) {
+thead th:nth-child(7)
+{
     width: 10%;
+}
+thead th:nth-child(8)
+{
+    width: 12%;
 }
 
 tbody td,
@@ -34,4 +39,3 @@ thead th {
     float: right;
     text-align: center;
 }
-

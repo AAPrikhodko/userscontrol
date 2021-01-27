@@ -75,7 +75,7 @@ const Home = ({users, getUsers, deleteUser}) => {
 
 
     return (
-        <div className="container-fluid text-right">
+        <div className="container-fluid">
 
             {anyUserDidEdit && <div className="container alert-container">
                 <div className="alert alert-info alert-dismissible fade show" role="alert">
@@ -111,7 +111,7 @@ const Home = ({users, getUsers, deleteUser}) => {
                            value={searchValue}
                            onChange={handleChange}/>
                 </div>
-                <div className="col">
+                <div className="col text-right">
                     <Button className="badge-pill btn-success m-2 " onClick={handleShowAddModal}>
                         <i className="bi bi-person-plus"></i> ADD USER </Button>
                 </div>
@@ -131,7 +131,8 @@ const Home = ({users, getUsers, deleteUser}) => {
                     <label className="form-check-label" htmlFor="byPhone">by phone</label>
                 </div>
             </div>
-            <ModalWindowAddUser show={showAddModal} handleClose={handleCloseAddModal} handleAnyUserDidAdd={handleAnyUserDidAdd}/>
+            <ModalWindowAddUser show={showAddModal} handleClose={handleCloseAddModal}
+                                handleAnyUserDidAdd={handleAnyUserDidAdd}/>
             <ModalWindowEditUser show={showEditUser} handleClose={handleCloseEditUser} user={userEditChoosed}
                                  handleAnyUserDidEdit={handleAnyUserDidEdit}/>
             <div className="row">
@@ -159,11 +160,15 @@ const Home = ({users, getUsers, deleteUser}) => {
                             <td>{user.career}</td>
                             <td>{user.dateOfCreate}</td>
                             <td>{user.dateOfChange}</td>
-                            <td className="container-fluid text-right">
-                                <Button className="badge-pill btn-primary m-2" onClick={() => editUserClicked(user)}>
-                                    <i className="bi bi-pencil"></i> EDIT </Button>
-                                <Button className="badge-pill btn-danger m-2" onClick={() => deleteUserClicked(user)}>
-                                    <i className="bi bi-trash"></i> DELETE </Button>
+                            <td>
+                                <div className="container">
+                                    <Button className="badge-pill btn-primary m-2"
+                                            onClick={() => editUserClicked(user)}>
+                                        <i className="bi bi-pencil"></i> EDIT </Button>
+                                    <Button className="badge-pill btn-danger m-2"
+                                            onClick={() => deleteUserClicked(user)}>
+                                        <i className="bi bi-trash"></i> DELETE </Button>
+                                </div>
                             </td>
                         </tr>
                     ))

@@ -47,7 +47,6 @@ const ModalWindowEditUser = ({show, handleClose, user, editUser, handleAnyUserDi
             dateOfChange: new Date().toLocaleDateString()
         }}
                 validationSchema={validationSchema}
-                validationSchema={validationSchema}
                 onSubmit={(values, {setSubmitting, resetForm}) => {
                     editUser(values,user.key)
                     setSubmitting(true)
@@ -102,9 +101,14 @@ const ModalWindowEditUser = ({show, handleClose, user, editUser, handleAnyUserDi
                                 <select id="career" className="form-control"
                                         onChange={handleChange} onBlur={handleBlur} value={values.career}>
                                     <option value="other">Choose...</option>
+                                    <option value="backend Developer">Backend Developer</option>
+                                    <option value="frontend developer">Frontend Developer</option>
                                     <option value="actor">Actor</option>
                                     <option value="singer">Singer</option>
-                                    <option value="frontend developer">Frontend Developer</option>
+                                    <option value="seo">SEO</option>
+                                    <option value="smm">SMM</option>
+                                    <option value="politician">Politician</option>
+                                    <option value="doctor">Doctor</option>
                                 </select>
                                 {touched.career && errors.career && <div className='checkout_errMessage'> {errors.career}</div>}
                             </div>

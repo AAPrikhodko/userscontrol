@@ -18,16 +18,16 @@ const Contacts = () => {
 
 
                         <ul className="contact_ul text-left">
-                            <li className="text-primary"><i className="bi bi-telegram"/> @prand85</li>
-                            <li className="text-primary"><i className="bi bi-whatsapp"/> +79508699555</li>
+                            <li className="text-primary"><i className="bi bi-telegram"/> <a href="https://teleg.run/prand85" target="_blank"> @prand85</a></li>
+                            <li className="text-primary"><i className="bi bi-whatsapp"/><a href="https://wa.me/79508699555" target="_blank">  +79508699555</a></li>
                             <li className="text-primary"><i className="bi bi-github"/> <a
-                                href="https://github.com/AAPrikhodko/userscontrol" target="_blank">GitHub</a></li>
+                                href="https://github.com/AAPrikhodko/userscontrol" target="_blank">  GitHub</a></li>
                             <li className="text-primary"><i className="bi bi-facebook"/> <a
                                 href="https://www.facebook.com/profile.php?id=100006505813589"
-                                target="_blank">Facebook</a></li>
+                                target="_blank">  Facebook</a></li>
                             <li className="text-primary"><i className="bi bi-twitter"/> <a
-                                href="https://twitter.com/Andrey60845146" target="_blank">Twitter</a></li>
-                            <li className="text-primary"><i className="bi bi-envelope-fill"/> prand85@yandex.ru</li>
+                                href="https://twitter.com/Andrey60845146" target="_blank"> Twitter</a></li>
+                            <li className="text-primary"><i className="bi bi-envelope-fill"/><a href="mailto:prand85@yandex.ru">  prand85@yandex.ru</a></li>
                         </ul>
                     </div>
 

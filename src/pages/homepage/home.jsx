@@ -41,16 +41,18 @@ const Home = ({users, getUsers, deleteUser}) => {
     }
 
     let searchType = $('input[name="searchRadio"]:checked').val()
+    debugger
     switch (searchType) {
         case "byName":
-            users = users.filter(user => user.name.toLowerCase().match(searchValue))
+            users = users.filter(user => user.name.toLowerCase().match(searchValue)||user.name.match(searchValue))
             break
         case "byEmail":
-            users = users.filter(user => user.email.toLowerCase().match(searchValue))
+            users = users.filter(user => user.email.toLowerCase().match(searchValue)||user.email.match(searchValue))
             break
         case "byPhone":
             users = users.filter(user => user.phone.toLowerCase().match(searchValue))
             break
+        default: break
     }
 
     if (anyUserDidEdit) {
@@ -164,10 +166,10 @@ const Home = ({users, getUsers, deleteUser}) => {
                                 <div className="container">
                                     <Button className="badge-pill btn-primary m-2"
                                             onClick={() => editUserClicked(user)}>
-                                        <i className="bi bi-pencil"></i> EDIT </Button>
+                                        <i className="bi bi-pencil"></i></Button>
                                     <Button className="badge-pill btn-danger m-2"
                                             onClick={() => deleteUserClicked(user)}>
-                                        <i className="bi bi-trash"></i> DELETE </Button>
+                                        <i className="bi bi-trash"></i></Button>
                                 </div>
                             </td>
                         </tr>

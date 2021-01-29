@@ -20,10 +20,10 @@ const Faq = () => {
                                 </div>
                             </li>
                             <li>
-                                <div> Edit any user <br/> Yoг may edit any field and save it to database </div>
+                                <div> Edit any user <br/> Yoг may edit any field and save it to database</div>
                             </li>
                             <li>
-                                <div> Delete any user <br/> The user wil be deleted from database </div>
+                                <div> Delete any user <br/> The user wil be deleted from database</div>
                             </li>
                             <li>
                                 <div>
@@ -55,7 +55,8 @@ const Faq = () => {
                     </ul>
                 </div>
                 <p className="headerName text-info">
-                    Visit our <a href='https://github.com/AAPrikhodko/userscontrol' target="_blank"> GitHub</a> page
+                    Visit our <a className="text-decoration-none" href='https://github.com/AAPrikhodko/userscontrol'
+                                 target="_blank"> GitHub</a> page
                 </p>
             </div>
         </div>

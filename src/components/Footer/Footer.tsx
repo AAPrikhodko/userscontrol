@@ -21,7 +21,7 @@ const Footer = () => {
                     <div className="col">
                         <h5>SUPPORT</h5>
                         <ul className="list-unstyled">
-                            <li className="colItem"><i className="bi bi-envelope-fill"></i> hot@apps.com</li>
+                            <li className="colItem"><i className="bi bi-envelope-fill"></i><a href="mailto:prand85@yandex.ru"> prand85@ya.ru</a></li>
                             <li className="colItem"><i className="bi bi-telephone-fill"></i> 8-950-8699555</li>
                         </ul>
                     </div>

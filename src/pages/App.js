@@ -15,8 +15,8 @@ function App() {
             <BrowserRouter>
                 <div className="header"><Header/></div>
                 <div className="content"><Route exact path='/' render={() => <Home/>}/></div>
-                <div className="content"><Route path='/faq' render={() => <Faq/>}/></div>
-                <div className="content"><Route path='/contacts' render={() => <Contacts/>}/></div>
+                <div className="content"><Route exact path='/faq' render={() => <Faq/>}/></div>
+                <div className="content"><Route exact path='/contacts' render={() => <Contacts/>}/></div>
                 <div className="footer"><Footer/></div>
             </BrowserRouter>
         </div>
